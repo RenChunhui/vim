@@ -1,5 +1,77 @@
 {
-    "languageserver": {},
+    "languageserver": {
+        "bash": {
+            "command": "bash-language-server",
+            "args": [
+                "start"
+            ],
+            "filetypes": [
+                "sh"
+            ],
+            "ignoredRootPaths": [
+                "~"
+            ]
+        },
+        "html": {
+            "command": "html-languageserver",
+            "args": [
+                "--stdio"
+            ],
+            "filetypes": [
+                "html"
+            ]
+        },
+        "css": {
+            "command": "css-languageserver",
+            "args": [
+                "--stdio"
+            ],
+            "filetypes": [
+                "css",
+                "scss"
+            ]
+        },
+        "json": {
+            "command": "vscode-json-languageserver",
+            "args": [
+                "--stdio"
+            ],
+            "filetypes": [
+                "json"
+            ]
+        },
+        "yaml": {
+            "command": "yaml-language-server",
+            "args": [
+                "--stdio"
+            ],
+            "filetypes": [
+                "yaml",
+                "yml"
+            ]
+        },
+        "javascript": {
+            "command": "javascript-typescript-stdio",
+            "filetypes": [
+                "js"
+            ]
+        },
+        "typescripts": {
+            "command": "typescript-language-server",
+            "args": [
+                "--stdio"
+            ],
+            "filetypes": [
+                "ts"
+            ]
+        },
+        "vue": {
+            "command": "vls",
+            "filetypes": [
+                "vue"
+            ]
+        }
+    },
     "npm.binPath": "yarn",
     "suggest": {
         "minTriggerInputLength": 2,
