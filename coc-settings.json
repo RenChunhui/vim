@@ -28,7 +28,8 @@
             ],
             "filetypes": [
                 "css",
-                "scss"
+                "scss",
+                "less"
             ]
         },
         "json": {
@@ -62,13 +63,23 @@
                 "--stdio"
             ],
             "filetypes": [
-                "ts"
+                "ts",
+                "tsx"
             ]
         },
         "vue": {
             "command": "vls",
             "filetypes": [
                 "vue"
+            ]
+        },
+        "vim": {
+            "command": "vim-language-server",
+            "args": [
+                "--stdio"
+            ],
+            "filetypes": [
+                "vim"
             ]
         }
     },
