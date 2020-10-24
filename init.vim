@@ -4,7 +4,6 @@
 
 set encoding=utf-8              " 编码
 set termguicolors               " 启用真彩
-set t_Co=256
 set number                      " 行号
 set cursorline                  " 突出显示当前行
 set mouse=a                     " 启用鼠标
@@ -35,7 +34,7 @@ let g:loaded_ruby_provider = 0
 let g:python3_host_prog = '/usr/bin/python3'
 
 if empty(glob('~/.config/nvim/plugged'))
-    autocmd VimEnter * PlugInstall
+  autocmd VimEnter * PlugInstall
 endif
 
 call plug#begin('~/.config/nvim/plugged')
@@ -43,13 +42,13 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
 
-Plug 'Shougo/defx.nvim'
-
+Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'kristijanhusak/defx-git'
-Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 
-Plug 'itchyny/lightline.vim'
+Plug 'bagrat/vim-buffet'
 Plug 'hecal3/vim-leader-guide'
 
 Plug 'editorconfig/editorconfig-vim'

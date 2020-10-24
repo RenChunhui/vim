@@ -1,27 +1,33 @@
 let g:lmap =  {}
 
 let g:lmap.a = {
-  \'name' : 'Application'
-  \}
+  \ 'name' : 'Application'
+  \ }
 
 let g:lmap.b = {
-  \'name' : 'Buffer',
-  \'f' : ['LeaderfBuffer', 'Find Buffer'],
-  \}
+  \ 'name' : 'Buffer',
+  \ 'f' : ['Buffers', 'Find Buffer'],
+  \ }
 
 let g:lmap.f = {
 	\ 'name' : 'File',
-	\ 'f' : ['LeaderfFile', 'Find File'],
-	\}
+	\ 'f' : ['Files', 'Find File'],
+	\ }
+
+let g:lmap.g = {
+	\ 'name' : 'Git',
+	\ 'f' : ['GFiles', 'Git Files'],
+	\ 'c' : ['Commits', 'Git Commits']
+  \ }
 
 let g:lmap.t = { 
-    \ 'name': 'Toggle',
-    \ 'e' : ['Defx -columns=indent:icon:icons:filename:type', 'Explorer'],
-    \ }
+  \ 'name': 'Toggle',
+  \ 'e' : ['Defx -columns=indent:icon:icons:filename:type', 'Explorer'],
+  \ }
 
 let g:lmap.w = {
-      \ 'name' : 'Window'
-      \ }
+  \ 'name' : 'Window'
+  \ }
 
 call leaderGuide#register_prefix_descriptions("<Space>", "g:lmap")
 nnoremap <silent> <leader> :<c-u>LeaderGuide '<Space>'<CR>
