@@ -20,10 +20,15 @@ set hlsearch                    " 高亮显示匹配结果
 set ignorecase                  " 搜索时忽略大小写
 
 set nobackup                    " 不创建备份文件
+set nowritebackup
 set noswapfile                  " 不创建交换文件
 set history=1000                " 记录历史操作
 set autoread                    " 启用文件监视
 set shortmess=atI               " 不显示首页提示
+
+set hidden
+set updatetime=300
+set shortmess+=c
 
 syntax on                       " 语法高亮
 filetype plugin indent on       " 打开文件类型检测

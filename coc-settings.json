@@ -12,35 +12,6 @@
                 "~"
             ]
         },
-        "html": {
-            "command": "html-languageserver",
-            "args": [
-                "--stdio"
-            ],
-            "filetypes": [
-                "html"
-            ]
-        },
-        "css": {
-            "command": "css-languageserver",
-            "args": [
-                "--stdio"
-            ],
-            "filetypes": [
-                "css",
-                "scss",
-                "less"
-            ]
-        },
-        "json": {
-            "command": "vscode-json-languageserver",
-            "args": [
-                "--stdio"
-            ],
-            "filetypes": [
-                "json"
-            ]
-        },
         "yaml": {
             "command": "yaml-language-server",
             "args": [
@@ -49,25 +20,6 @@
             "filetypes": [
                 "yaml",
                 "yml"
-            ]
-        },
-        "javascript": {
-            "command": "javascript-typescript-langserver",
-            "args": [
-                "--stdio"
-            ],
-            "filetypes": [
-                "js"
-            ]
-        },
-        "typescript": {
-            "command": "typescript-language-server",
-            "args": [
-                "--stdio"
-            ],
-            "filetypes": [
-                "ts",
-                "tsx"
             ]
         },
         "vue": {
@@ -88,9 +40,13 @@
     },
     "npm.binPath": "yarn",
     "suggest": {
+        // 设置最少补全触发字符数
         "minTriggerInputLength": 2,
+        // 补全超时时间
+        "timeout": 500,
+        "noselect": false,
         "disableMenu": true,
-        "snippetIndicator": "",
+        "snippetIndicator": "snip",
         "completionItemKindLabels": {
             "keyword": "\uf1de",
             "variable": "\ue79b",
