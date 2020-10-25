@@ -1,9 +1,5 @@
 let g:coc_snippet_next = '<tab>'
 
-let g:coc_filetype_map = {
-	\ 'Brewfile': 'ruby',
-  \ }
-
 " 使用 <tab> 触发补全
 function! s:check_back_space() abort
 	let col = col('.') - 1
@@ -12,7 +8,7 @@ endfunction
 
 inoremap <silent><expr> <TAB>
 			\ pumvisible() ? "\<C-n>" :
-      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+      		\ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
 			\ <SID>check_back_space() ? "\<TAB>" :
 			\ coc#refresh()
 

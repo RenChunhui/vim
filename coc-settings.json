@@ -52,12 +52,15 @@
             ]
         },
         "javascript": {
-            "command": "javascript-typescript-stdio",
+            "command": "javascript-typescript-langserver",
+            "args": [
+                "--stdio"
+            ],
             "filetypes": [
                 "js"
             ]
         },
-        "typescripts": {
+        "typescript": {
             "command": "typescript-language-server",
             "args": [
                 "--stdio"
