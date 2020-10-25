@@ -46,7 +46,6 @@
         "timeout": 500,
         "noselect": false,
         "disableMenu": true,
-        "snippetIndicator": "snip",
         "completionItemKindLabels": {
             "keyword": "\uf1de",
             "variable": "\ue79b",
