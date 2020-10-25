@@ -55,7 +55,6 @@ Plug 'dense-analysis/ale'
 
 Plug 'bagrat/vim-buffet'
 Plug 'hecal3/vim-leader-guide'
-Plug 'SirVer/ultisnips'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/vim-easy-align'
