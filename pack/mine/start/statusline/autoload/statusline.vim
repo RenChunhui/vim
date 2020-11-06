@@ -22,6 +22,8 @@ let s:icons={
     \ 'json' 				: ['','F5DE19'],
     \ 'yaml' 				: ['YAML','fbc02d'],
     \ 'markdown' 		: ['','755838'],
+    \ 'go'                  : ['','5dc9e1'],
+    \ 'rust'                : ['','A04F12']
     \}
 
 function! statusline#mode() abort

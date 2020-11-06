@@ -36,7 +36,7 @@ filetype plugin indent on       " 打开文件类型检测
 let mapleader = "\<Space>"
 let g:loaded_python_provider = 0
 let g:loaded_ruby_provider = 0
-let g:python3_host_prog = '/usr/bin/python3'
+let g:python3_host_prog = '/usr/local/bin/python3'
 
 if empty(glob('~/.config/nvim/plugged'))
   autocmd VimEnter * PlugInstall
@@ -63,6 +63,8 @@ Plug 'Yggdroot/indentLine'
 Plug 'voldikss/vim-translator'
 Plug 'tpope/vim-dadbod'
 Plug 'kristijanhusak/vim-dadbod-ui'
+Plug 'kristijanhusak/vim-dadbod-completion'
+Plug 'mbbill/undotree'
 
 " themes
 Plug 'morhetz/gruvbox'
