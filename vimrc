@@ -30,41 +30,40 @@ set hidden
 set updatetime=300
 set shortmess+=c
 
+set nocompatible
+
 syntax on                       " 语法高亮
 filetype plugin indent on       " 打开文件类型检测
 
-let mapleader = "\<Space>"
-let g:loaded_python_provider = 0
-let g:loaded_ruby_provider = 0
-let g:python3_host_prog = '/usr/local/bin/python3'
-
-if empty(glob('~/.config/nvim/plugged'))
-  autocmd VimEnter * PlugInstall
+if empty(glob('~/.vim/plugged'))
+	autocmd VimEnter * PlugInstall
 endif
 
-call plug#begin('~/.config/nvim/plugged')
+call plug#begin('~/.vim/plugged')
 
+" Intellisense engine
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
-Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'kristijanhusak/defx-git'
+" File explorer
+Plug 'Shougo/defx.nvim'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
+Plug 'kristijanhusak/defx-git', {'on': 'Defx'}
 Plug 'tpope/vim-fugitive'
-Plug 'dense-analysis/ale'
 
 Plug 'bagrat/vim-buffet'
-Plug 'hecal3/vim-leader-guide'
+
+Plug 'liuchengxu/vim-which-key'
+
 Plug 'editorconfig/editorconfig-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/vim-easy-align'
 Plug 'Yggdroot/indentLine'
 
-Plug 'voldikss/vim-translator'
-Plug 'tpope/vim-dadbod'
-Plug 'kristijanhusak/vim-dadbod-ui'
-Plug 'kristijanhusak/vim-dadbod-completion'
-Plug 'mbbill/undotree'
+" A calendar application for Vim
+Plug 'itchyny/calendar.vim', {'on': 'Calendar'}
 
 " themes
 Plug 'morhetz/gruvbox'

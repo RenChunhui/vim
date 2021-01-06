@@ -5,7 +5,7 @@
 " ============================================================================
 
 let s:disable_statusline =
-	\ 'defx\|denite\|vista\|tagbar\|undotree\|diff\|peekaboo\|sidemenu'
+	\ 'defx\|denite\|vista\|tagbar\|undotree\|diff\|peekaboo\|sidemenu\|which_key'
 
 let s:stl  = "%1*\ %{statusline#mode()}\ %*"
 let s:stl .= "  %{statusline#vc()}"
