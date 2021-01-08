@@ -1,11 +1,3 @@
-" coc extension
-let	g:coc_global_extensions = [
-	\ 'coc-html',
-	\ 'coc-css',
-	\ 'coc-json',
-	\ 'coc-tsserver'
-  \ ]
-
 " 使用 <tab> 触发补全
 function! s:check_back_space() abort
     let col = col('.') - 1
@@ -27,4 +19,5 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<CR>"
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
       \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
-autocmd BufWritePre *.go :call CocAction('organizeImport')
+" autocmd BufWritePre *.go :call CocAction('organizeImport')
+autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')

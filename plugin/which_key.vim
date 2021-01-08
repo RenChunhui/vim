@@ -16,6 +16,7 @@ let g:which_key_map = {}
 
 let g:which_key_map.a = {
             \ 'name':"Applications",
+						\ 'c': 'Calendar'
             \}
 
 let g:which_key_map.b = {
@@ -25,7 +26,8 @@ let g:which_key_map.b = {
 
 let g:which_key_map.f = {
 			\ 'name': 'File',
-			\ 'f': [':Files','Find File']
+			\ 'f': [':Files','Find File'],
+			\ 't': [':Filetypes', 'File Types']
 			\ }
 
 let g:which_key_map.g = {
@@ -34,9 +36,18 @@ let g:which_key_map.g = {
 			\ 'c': ['Commits', 'Git Commits']
 			\ }
 
+let g:which_key_map.s = {
+			\ 'name': 'Search',
+			\ 'l': ['BLines', 'Line in Buffer'],
+			\ 'L': ['Lines', 'Lines'],
+			\ 'h': [':History:', 'Command History'],
+			\ 'H': [':History/', 'Search History']
+			\ }
+
 let g:which_key_map.t = {
 			\ 'name': 'Toggle',
-			\ 'e': [':Defx -columns=indent:icon:icons:filename:type', 'Explorer']
+			\ 'e': [':Defx -columns=indent:icon:icons:filename:type', 'Explorer'],
+			\ 't': [':Colors','Theme']
 			\ }
 
 let g:which_key_map.w = {

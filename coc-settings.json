@@ -1,5 +1,24 @@
 {
     "languageserver": {
+        "html": {
+            "command": "html-languageserver",
+            "args": [
+                "--stdio"
+            ],
+            "filetypes": [
+                "html"
+            ]
+        },
+        "css": {
+            "command": "css-languageserver",
+            "args": [
+                "--stdio"
+            ],
+            "filetypes": [
+                "css",
+                "scss"
+            ]
+        },
         "bash": {
             "command": "bash-language-server",
             "args": [
@@ -20,12 +39,6 @@
             "filetypes": [
                 "yaml",
                 "yml"
-            ]
-        },
-        "vue": {
-            "command": "vls",
-            "filetypes": [
-                "vue"
             ]
         },
         "vim": {
